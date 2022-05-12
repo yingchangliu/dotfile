@@ -1,1 +1,3 @@
 # dotfile
+
+dotfile of riverwm.
