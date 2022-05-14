@@ -13,7 +13,7 @@ fi
 #
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+HISTFILE=~/dotfile/histfile
 HISTSIZE=1234567890
 SAVEHIST=1234567890
 bindkey -e
