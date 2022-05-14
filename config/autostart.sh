@@ -14,7 +14,7 @@ killall swhks
 swhks &
 pkexec swhkd # -c $HOME/.config/swhkd/swhkdrc &
 sh $HOME/.config/bin/pkill_bc &
-swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
+#swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 
 run mako
 swayidle -w timeout 300 ~/.config/bin/wayland_session_lock &
