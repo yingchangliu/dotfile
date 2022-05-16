@@ -2,8 +2,6 @@
 super + return
 	alacritty
 
-super + q
-	riverctl close
 super + Escape
     pkill -usr1 -x swhkd
 
@@ -12,7 +10,8 @@ super + shift + f
 
 super + w 
 	firefox
-
+ctrl + alt + l
+    ~/.config/bin/wayland_session_lock 
 
 super + v
 	alacritty -e pulsemixer
@@ -29,9 +28,6 @@ super + b
 
 super + x
 	~/.config/bin/logout
-
-super + shift + r 
-	~/.config/river/init
 
 super + shift + d
 	discord-canary --ignore-gpu-blocklist --ozone-platform=wayland --enable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --no-sandbox --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy

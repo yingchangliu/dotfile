@@ -17,7 +17,7 @@ sh $HOME/.config/bin/pkill_bc &
 #swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 
 run mako
-swayidle -w timeout 300 ~/.config/bin/wayland_session_lock &
+swayidle -w timeout 300 ~/.config/bin/wayland_session_lock   before-sleep 'swaylock -f -c 000000'&
 
 #run swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 #run nm-applet  # network-manager-applet

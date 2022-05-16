@@ -30,6 +30,7 @@
 		"disable-click": false,
 		"num-tags": 7
     },
+
 	"network": {
 		"tooltip": false,
 		//"format-wifi": "  {essid} {ipaddr}",
@@ -41,7 +42,7 @@
 		"tooltip": false,
 		"format": " {}%",
 		"interval":1,
-        "on-click":"bash ~/.config/bin/wallpaper.sh",
+        "on-click":"bash ~/.config/bin/pkill_bc",
         "on-click-right":"killall swaybg",
         "on-scroll-up": "light -A 1%",
         "on-scroll-down": "light -U 1%"
