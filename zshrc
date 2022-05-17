@@ -86,4 +86,4 @@ source /opt/miniconda/etc/profile.d/conda.sh 2>/dev/null
 source ~/.config/nnn/plugin.sh 2>/dev/null
 #
 # To customize prompt, run `p10k configure` or edit ~/dotfile/p10k.zsh.
-[[ ! -f ~/dotfile/p10k.zsh ]] || source ~/dotfile/p10k.zsh
+[[ ! -f ~/dotfile/p10k.zsh ]] || source ~/dotfile/p10k.zsh 2>/dev/null
