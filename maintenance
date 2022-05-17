@@ -20,7 +20,7 @@ pacman -Qtdq
 sudo pacman -Rns $(pacman -Qtdq)
 
 # Clean the Cache
-rm -rf .cache/*
+#rm -rf .cache/*
 
 # Clean the journal
 sudo journalctl --vacuum-time=2weeks

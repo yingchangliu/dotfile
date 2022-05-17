@@ -1,9 +1,3 @@
-cd .local/
-ls
-ls -la
-cd share/
-ls
-cd xorg/
 ls
 cd ~
 ls
@@ -498,3 +492,9 @@ river
 river
 river
 exit
+rm -r !(a)
+ls
+mkdir vb c
+ls
+rm -r !(~/cache/test/c)
+rm -r !(~/.cache/test/c)
