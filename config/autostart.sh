@@ -23,7 +23,7 @@ swayidle -w timeout 300 ~/.config/bin/wayland_session_lock   before-sleep 'swayl
 #run xfce4-power-manager --no-daemon
 #run blueman-applet
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & 2>/dev/null
-#run fcitx5 -d
+run fcitx5 -d
 #run thunar --daemon
 killall swhks 2>/dev/null
 swhks & 2>/dev/null
