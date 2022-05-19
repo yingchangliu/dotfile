@@ -15,7 +15,6 @@ file
 findutils
 firefox
 flex
-fzf
 gawk
 gcc
 gettext
@@ -38,11 +37,9 @@ mako
 man-db
 mpv
 neofetch
-nnn
 ntfs-3g
 nvidia
 nvidia-settings
-nvidia-utils
 os-prober
 otf-font-awesome
 pacman

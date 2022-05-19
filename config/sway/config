@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 exec sh $HOME/.config/autostart.sh &
-xwayland enabled
+#xwayland enabled
 default_border none
 smart_gaps on
 gaps inner 8
