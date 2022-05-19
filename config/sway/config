@@ -4,6 +4,13 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+exec sh $HOME/.config/autostart.sh &
+xwayland enabled
+default_border none
+smart_gaps on
+gaps inner 8
+gaps outer 8 
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -70,7 +77,6 @@ set $term alacritty
 
     # Start your launcher
 #    bindsym $mod+d exec $menu
-exec sh $HOME/.config/autostart.sh &
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

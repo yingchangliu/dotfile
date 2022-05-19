@@ -88,7 +88,7 @@ if (( UID != 0 )); then
 fi
 
 ## Safety features
-alias cp='cp -iv'
+#alias cp='cp -iv'
 alias mv='mv -iv'
 alias ln='ln -iv'
 # alias rm=' timeout 5 rm -Iv --one-file-system --preserve-root'   # 'rm -i' prompts for every file
