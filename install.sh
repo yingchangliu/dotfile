@@ -42,3 +42,6 @@ for name in ${dotfiles}/config/*; do
     ln -sf $name $target
 
 done
+
+ln -sf /run/media/code/linuxcache/.conda $HOME/ 2>/dev/null
+

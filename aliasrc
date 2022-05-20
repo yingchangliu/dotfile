@@ -29,6 +29,8 @@ ex ()
     fi
 }
 
+# view image using mpv
+alias mvi='mpv --config-dir=$HOME/.config/mvi'
 
 # unalias run-help
 alias help=run-help
