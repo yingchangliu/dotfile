@@ -32,6 +32,21 @@ ex ()
 # view image using mpv
 alias mvi='mpv --config-dir=$HOME/.config/mvi'
 
+# start sway without nvidia
+alias sway='sway --unsupported-gpu'
+
+# start awesome from xinitrc
+alias awesome='startx'
+
+# alacritty with wayland
+alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
+
+
+
+# change hosts for connect some adress
+alias hosts='sudo wget https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts -O /etc/hosts'
+alias hosts2='sudo wget https://scaffrey.coding.net/p/hosts/d/hosts/git/raw/master/hosts-files/hosts -O /etc/hosts'
+alias hosts3='sudo wget https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/hosts -O /etc/hosts'
 # unalias run-help
 alias help=run-help
 
@@ -90,7 +105,7 @@ if (( UID != 0 )); then
 fi
 
 ## Safety features
-alias cp='cp -Iv'
+alias cp='cp -iv'
 alias mv='mv -iv'
 alias ln='ln -iv'
 # alias rm=' timeout 5 rm -Iv --one-file-system --preserve-root'   # 'rm -i' prompts for every file

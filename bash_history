@@ -1,7 +1,3 @@
-ls
-cd ~
-ls
-ls -la
 cd .config/
 ls
 ls -la
@@ -498,3 +494,7 @@ mkdir vb c
 ls
 rm -r !(~/cache/test/c)
 rm -r !(~/.cache/test/c)
+env QT_QPA_PLATFORM=xcb VirtualBox
+sudo env QT_QPA_PLATFORM=xcb VirtualBox
+env QT_QPA_PLATFORM=xcb virtualbox
+su

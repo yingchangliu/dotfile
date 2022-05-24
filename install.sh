@@ -42,6 +42,14 @@ for name in ${dotfiles}/config/*; do
     ln -sf $name $target
 
 done
+for name in ${dotfiles}/x11/*; do
+
+    target="$HOME/.config/"
+    #backup $target
+    ln -sf $name $target
+
+done
+
 
 ln -sf /run/media/code/linuxcache/.conda $HOME/ 2>/dev/null
 

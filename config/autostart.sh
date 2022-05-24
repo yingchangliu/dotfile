@@ -15,7 +15,7 @@ run waybar & 2>/dev/null
 
 run mako & 2>/dev/null
 
-swayidle -w timeout 300 ~/.config/bin/wayland_session_lock   before-sleep 'swaylock -f -c 000000'& 2>/dev/null
+swayidle -w timeout 3000 ~/.config/bin/wayland_session_lock   before-sleep 'swaylock -f -c 000000'& 2>/dev/null
 
 #run swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 #run nm-applet  # network-manager-applet
