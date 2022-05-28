@@ -39,7 +39,7 @@ alias sway='sway --unsupported-gpu'
 alias awesome='startx'
 
 # alacritty with wayland
-alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
+# alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
 
 
 
