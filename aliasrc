@@ -38,6 +38,8 @@ alias sway='sway --unsupported-gpu'
 # start awesome from xinitrc
 alias awesome='startx'
 
+# OBS from xwayland
+alias obs='QT_QPA_PLATFORM=xcb obs'
 # alacritty with wayland
 # alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
 
