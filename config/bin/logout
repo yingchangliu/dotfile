@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 choice=$(printf "Shutdown\nReboot\nSuspend" | wofi -dmenu)
 if [[ $choice == "Shutdown" ]];then
-	loginctl poweroff
+	systemctl poweroff
 elif [[ $choice == "Reboot" ]];then
-	loginctl reboot
+	systemctl reboot
 elif [[ $choice == "Suspend" ]];then
-	loginctl suspend
+	systemctl suspend
 fi
