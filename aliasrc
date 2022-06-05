@@ -1,3 +1,25 @@
+alias matlab='/home/kelen/bin/matlab/bin/matlab'
+# view image using mpv
+alias mvi='mpv --config-dir=$HOME/.config/mvi'
+
+# start sway without nvidia
+alias sway='sway --unsupported-gpu'
+
+# start some desktop from xinitrc
+alias awesome='startx ~/dotfile/xinitrc/xinitrc.awesome'
+alias gnome='startx ~/dotfile/xinitrc/xinitrc.gnome'
+alias bspwm='startx ~/dotfile/xinitrc/xinitrc.bspwm'
+alias dwm='startx ~/dotfile/xinitrc/xinitrc.dwm'
+
+# OBS from xwayland
+alias obs='QT_QPA_PLATFORM=xcb obs'
+# alacritty with wayland
+# alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
+
+# change hosts for connect some adress
+alias hosts='sudo wget https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts -O /etc/hosts'
+alias hosts2='sudo wget https://scaffrey.coding.net/p/hosts/d/hosts/git/raw/master/hosts-files/hosts -O /etc/hosts'
+alias hosts3='sudo wget https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/hosts -O /etc/hosts'
 
 # ex - archive extractor
 # usage: ex <file>
@@ -29,29 +51,7 @@ ex ()
     fi
 }
 
-# view image using mpv
-alias mvi='mpv --config-dir=$HOME/.config/mvi'
 
-# start sway without nvidia
-alias sway='sway --unsupported-gpu'
-
-# start some desktop from xinitrc
-alias awesome='startx ~/dotfile/xinitrc/xinitrc.awesome'
-alias gnome='startx ~/dotfile/xinitrc/xinitrc.gnome'
-alias bspwm='startx ~/dotfile/xinitrc/xinitrc.bspwm'
-alias dwm='startx ~/dotfile/xinitrc/xinitrc.dwm'
-
-# OBS from xwayland
-alias obs='QT_QPA_PLATFORM=xcb obs'
-# alacritty with wayland
-# alias alacritty='Exec=env WAYLAND_DISPLAY= alacritty'
-
-
-
-# change hosts for connect some adress
-alias hosts='sudo wget https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts -O /etc/hosts'
-alias hosts2='sudo wget https://scaffrey.coding.net/p/hosts/d/hosts/git/raw/master/hosts-files/hosts -O /etc/hosts'
-alias hosts3='sudo wget https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/hosts -O /etc/hosts'
 # unalias run-help
 alias help=run-help
 
