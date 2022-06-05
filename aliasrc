@@ -36,8 +36,10 @@ alias mvi='mpv --config-dir=$HOME/.config/mvi'
 alias sway='sway --unsupported-gpu'
 
 # start some desktop from xinitrc
-alias awesome='startx ~/.xinitrc.awesome'
-alias gnome='startx ~/.xinitrc.gnome'
+alias awesome='startx ~/dotfile/xinitrc/xinitrc.awesome'
+alias gnome='startx ~/dotfile/xinitrc/xinitrc.gnome'
+alias bspwm='startx ~/dotfile/xinitrc/xinitrc.bspwm'
+alias dwm='startx ~/dotfile/xinitrc/xinitrc.dwm'
 
 # OBS from xwayland
 alias obs='QT_QPA_PLATFORM=xcb obs'

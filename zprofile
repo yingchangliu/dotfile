@@ -19,6 +19,8 @@ export SDL_VIDEODRIVER=wayland
 export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+export _JAVA_AWT_WM_NONREPARENTING=1
 #export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 #export XKB_DEFAULT_OPTIONS=caps:swapescape
