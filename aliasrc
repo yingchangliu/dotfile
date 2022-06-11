@@ -1,4 +1,4 @@
-alias matlab='/home/kelen/bin/matlab/bin/matlab'
+#alias matlab='/home/kelen/bin/matlab/bin/matlab'
 # view image using mpv
 alias mvi='mpv --config-dir=$HOME/.config/mvi'
 

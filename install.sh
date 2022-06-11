@@ -51,5 +51,5 @@ for name in ${dotfiles}/x11/*; do
 done
 
 
-ln -sf /run/media/code/linuxcache/.conda $HOME/ 2>/dev/null
+#ln -sf /run/media/code/linuxcache/.conda $HOME/ 2>/dev/null
 

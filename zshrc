@@ -69,6 +69,7 @@ autoload run-help-svk
 
 
 [ -f "$HOME/dotfile/aliasrc" ] && source "$HOME/dotfile/aliasrc"
+[ -f "$HOME/dotfile/localsettingrc" ] && source "$HOME/dotfile/localsettingrc"
 
 
 ## Some customized settings of kelen
