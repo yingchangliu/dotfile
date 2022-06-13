@@ -24,6 +24,7 @@ swayidle -w timeout 3000 ~/.config/bin/wayland_session_lock   before-sleep 'sway
 #run blueman-applet
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & 2>/dev/null
 run fcitx5 -d
+run udiskie & 2>/dev/null
 #run thunar --daemon
 killall swhks 2>/dev/null
 swhks & 2>/dev/null
