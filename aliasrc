@@ -1,4 +1,7 @@
 #alias matlab='/home/kelen/bin/matlab/bin/matlab'
+# check kernel
+alias checkkernel='sh ~/dotfile/script/checkbootkernel.sh'
+
 # view image using mpv
 alias mvi='mpv --config-dir=$HOME/.config/mvi'
 
