@@ -1,4 +1,5 @@
 #alias matlab='/home/kelen/bin/matlab/bin/matlab'
+alias xfce4='env LANG=zh_CN.UTF-8 startxfce4'
 # check kernel
 alias checkkernel='sh ~/dotfile/script/checkbootkernel.sh'
 

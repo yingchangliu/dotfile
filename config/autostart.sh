@@ -13,10 +13,11 @@ sh $HOME/.config/bin/pkill_bc & 2>/dev/null
 run waybar & 2>/dev/null
 #swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 
-run mako list & 2>/dev/null
+#run mako list & 2>/dev/null
 
 swayidle -w timeout 3000 ~/.config/bin/wayland_session_lock   before-sleep 'swaylock -f -c 000000'& 2>/dev/null
-
+run xfce4-power-manager & 2>/dev/null
+run dunst & 2>/dev/null
 #run swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 #run nm-applet  # network-manager-applet
 #run mpd
