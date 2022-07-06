@@ -12,7 +12,7 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="26"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="8"/>
+        <value type="int" value="1"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
@@ -20,7 +20,6 @@
         <value type="int" value="6"/>
         <value type="int" value="9"/>
         <value type="int" value="10"/>
-        <value type="int" value="7"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
         <value type="int" value="13"/>
@@ -43,9 +42,14 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi 网络连接“upc”已激活：upc (85%)"/>
+        <value type="string" value="网络管理器小程序"/>
         <value type="string" value="fcitx5 tray window"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="zoom "/>
         <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="steam"/>
         <value type="string" value="Fcitx"/>
@@ -69,5 +73,6 @@
       <property name="mpris-players" type="string" value="chromium.instance138038;firefox.instance1931"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
+    <property name="plugin-1" type="string" value="whiskermenu"/>
   </property>
 </channel>
