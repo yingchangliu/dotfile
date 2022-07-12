@@ -76,3 +76,9 @@ XF86AudioPrev
 
 XF86AudioNext
 	playerctl next
+
+XF86MonBrightnessUp
+    light -A 5
+
+XF86MonBrightnessDown
+    light -U 5
