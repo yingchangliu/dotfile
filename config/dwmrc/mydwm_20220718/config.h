@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+#include <X11/XF86keysym.h>
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -31,9 +32,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+    /* class      instance    title       tags mask     switchtotag    isfloating   monitor */
+    { "Gimp",     NULL,       NULL,       0,            0,             1,           -1 },
+    { "firefox",  NULL,       NULL,       1 << 8,       9,             0,           -1 },
+    { "Steam",    NULL,       NULL,       1 << 7,       8,             1,           -1 },
 };
 
 /* layout(s) */
@@ -109,6 +111,12 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
+    { MODKEY,                       XK_w,      spawn,          SHCMD("firefox") },
+    { 0, XF86XK_AudioMute,                     spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle") },
+    { 0, XF86XK_AudioRaiseVolume,              spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5%") },
+    { 0, XF86XK_AudioLowerVolume,              spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5%") },
+    { 0, XF86XK_MonBrightnessUp,               spawn,          SHCMD("light -A 5") },
+    { 0, XF86XK_MonBrightnessDown,             spawn,          SHCMD("light -U 5") },
 };
 
 /* button definitions */

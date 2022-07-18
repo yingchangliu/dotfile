@@ -1,4 +1,3 @@
-cd .config/
 ls
 ls -la
 ls
@@ -498,3 +497,4 @@ env QT_QPA_PLATFORM=xcb VirtualBox
 sudo env QT_QPA_PLATFORM=xcb VirtualBox
 env QT_QPA_PLATFORM=xcb virtualbox
 su
+exit
