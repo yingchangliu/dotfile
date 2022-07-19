@@ -291,9 +291,9 @@ ${offset 20}${color2}Document :${color} ${alignr}${offset -10}${fs_used /run/med
 ${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda3}${alignr}${diskiograph_read sda3 8,100}
 ${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda3}${alignr}${diskiograph_write sda3 8,100}
 ${voffset 5}\
-${offset 20}${color2}Code :${color} ${alignr}${offset -10}${fs_used /run/media/code} / ${fs_size /run/media/code}${alignr}${fs_bar /run/media/code}
-${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda5}${alignr}${diskiograph_read sda5 8,100}
-${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda5}${alignr}${diskiograph_write sda5 8,100}
+#${offset 20}${color2}Code :${color} ${alignr}${offset -10}${fs_used /run/media/code} / ${fs_size /run/media/code}${alignr}${fs_bar /run/media/code}
+#${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda5}${alignr}${diskiograph_read sda5 8,100}
+#${offset 30}${color2}I/O Write:${color} ${alignr}${offset -10}${diskio_write /dev/sda5}${alignr}${diskiograph_write sda5 8,100}
 #${voffset -10}
 #${offset 30}${color2}Backup :${color} ${alignr}${offset -10}${fs_used /run/timeshift/backup} / ${fs_size /run/timeshift/backup}${alignr}${fs_bar /run/timeshift/backup}
 #${offset 30}${color2}I/O Read:${color} ${alignr}${offset -10}${diskio_read /dev/sda4}${alignr}${diskiograph_read sda4 8,100}

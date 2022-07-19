@@ -23,7 +23,7 @@ blocks.h:
 	cp blocks.def.h $@
 
 clean:
-	rm -f *.o *.gch dwmblocks
+	rm -f *.o *.gch dwmblocks blocks.h *.orig *.reg dwmblocks.o 
 
 install: dwmblocks
 	mkdir -p ${DESTDIR}${PREFIX}/bin
