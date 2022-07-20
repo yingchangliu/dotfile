@@ -44,8 +44,12 @@ static const Rule rules[] = {
     /* class      instance    title       tags mask     switchtotag    isfloating   monitor */
     { "Gimp",     NULL,       NULL,       0,            0,             1,           -1 },
     { "firefox",  NULL,       NULL,       1 << 8,       9,             0,           -1 },
-    { "Tor Browser",NULL,     NULL,       1 << 7,       8,             0,           -1 },
-    { "Steam",    NULL,       NULL,       1 << 6,       7,             1,           -1 },
+    { "Tor Browser",NULL,     NULL,       1 << 8,       9,             0,           -1 },
+    { "Steam",    NULL,       NULL,       1 << 7,       8,             1,           -1 },
+    { "Lutris",   NULL,       NULL,       1 << 6,       7,             1,           -1 },
+    { "wegame.exe", NULL,     NULL,       1 << 6,       7,             1,           -1 },
+    { "leagueclientux.exe", NULL,     NULL,       1 << 6,       7,             1,           -1 },
+    { "league of legends.exe", NULL,     NULL,       1 << 6,       7,             1,           -1 },
 };
 
 /* layout(s) */
@@ -79,11 +83,14 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *trayercmd[]= { "/home/kelen/dotfile/script/t-toggle.sh", NULL};
+static const char *killprocesscmd[]= { "/home/kelen/dotfile/config/bin/killprocess", NULL};
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_o,      spawn,          {.v = trayercmd } },
+	{ MODKEY|ShiftMask,             XK_c,      spawn,          {.v = killprocesscmd } },
+	{ MODKEY,                       XK_Tab,    view,           {0} },
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
     { MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
@@ -96,9 +103,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_h,      setcfact,       {.f = +0.25} },
 	{ MODKEY|ShiftMask,             XK_l,      setcfact,       {.f = -0.25} },
 	{ MODKEY|ShiftMask,             XK_o,      setcfact,       {.f =  0.00} },
-	{ MODKEY|ShiftMask,                       XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },

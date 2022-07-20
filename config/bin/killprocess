@@ -1,5 +1,5 @@
 #!/bin/sh
-choice=$(ps axch -o cmd| wofi -i -dmenu)
+choice=$(ps axch -o cmd| rofi -i -dmenu)
 if [[ ! $choice ]];then
 	echo "Choose a program to kill"; exit 1
 else

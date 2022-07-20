@@ -2,6 +2,7 @@
 alias xfce4='env LANG=zh_CN.UTF-8 startxfce4'
 # check kernel
 alias checkkernel='sh ~/dotfile/script/checkbootkernel.sh'
+alias checkclass='sh ~/dotfile/script/checkclass.sh'
 
 # view image using mpv
 alias mvi='mpv --config-dir=$HOME/.config/mvi'

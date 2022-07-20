@@ -236,8 +236,9 @@ ${color6}${voffset 4}${font GE Inspira:size=12}${alignc}${time %A} ${time %B} ${
 #${endif}${endif}
 #\
 #\
-${color5}${font Roboto:size=10}${voffset -15}S Y S T E M   ${hr 2}${font}${color}${voffset 2}
-${color2}Hostname:${color} ${alignr}${nodename}
+#${color5}${font Roboto:size=10}${voffset -15}S Y S T E M   ${hr 2}${font}${color}${voffset 2}
+${color5}${voffset 4}${font Roboto:size=10}S Y S T E M  ${hr 2}${font}${color}${voffset 2}
+${color2}User:${color} ${alignr}${user_names}@${nodename}
 ${color2}Distro:${color}${alignr} ${alignr}${execi 6000 lsb_release -a | grep 'Description'|awk {'print $2,$3 '}}
 ${color2}Kernel:${color}${alignr}${exec uname} ${exec uname -r}
 ${color2}Packages:${color}${alignr} ${execi 600 pacman -Qq | wc -l} (${execi 600 checkupdates | wc -l} update)
