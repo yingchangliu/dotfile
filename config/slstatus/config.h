@@ -65,14 +65,14 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function     format      argument */
-    { vol_perc,     "Vol %s",   "/dev/mixer" },
+    { vol_perc,     "Vol %2s",   "/dev/mixer" },
     { separator,    " | ",      NULL },
-    { cpu_perc,     "CPU %s%%", NULL },
+    { cpu_perc,     "CPU %2s%%", NULL },
     { separator,    " | ",      NULL },
     {run_command,   "Mem %s",   "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g"},
     { separator,    " | ",      NULL },
-    { battery_perc, "Bat %s%%", "BAT0" },
+    { battery_perc, "Bat %2s%%", "BAT0" },
     { separator,    " | ",      NULL },
 	{ datetime,     "%s",       "%F (%a) %R" },
-    { separator,    "   ",      NULL },
+    { separator,    " ",        NULL },
 };
