@@ -18,7 +18,6 @@ sh $HOME/.config/bin/pkill_bc
 #swayidle -w timeout 3000 ~/.config/bin/wayland_session_lock   before-sleep 'swaylock -f -c 000000'
 #run xfce4-power-manager
 run dunst
-run dwmblocks
 run picom
 run conky -c ~/.config/conky/conkyrc
 run slstatus
