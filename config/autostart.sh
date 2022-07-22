@@ -21,6 +21,7 @@ run dunst
 run dwmblocks
 run picom
 run conky -c ~/.config/conky/conkyrc
+run slstatus
 #run swaybg -i $(find $HOME/.config/background/. -type f | shuf -n 1) -m fill &
 #run nm-applet  # network-manager-applet
 #run mpd

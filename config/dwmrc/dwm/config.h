@@ -84,13 +84,15 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *trayercmd[]= { "/home/kelen/dotfile/script/t-toggle.sh", NULL};
 static const char *killprocesscmd[]= { "/home/kelen/dotfile/config/bin/killprocess", NULL};
+static const char *changebackgroundcmd[]= { "/home/kelen/dotfile/config/bin/xorg-background-changer", NULL};
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_o,      spawn,          {.v = trayercmd } },
 	{ MODKEY|ShiftMask,             XK_c,      spawn,          {.v = killprocesscmd } },
-	{ MODKEY,                       XK_Tab,    view,           {0} },
+	{ MODKEY,                       XK_c,      spawn,          {.v = changebackgroundcmd } },
+    { MODKEY,                       XK_Tab,    view,           {0} },
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
     { MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
