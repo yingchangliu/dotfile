@@ -30,7 +30,7 @@ run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 run fcitx5 -d
 run udiskie
 #run thunar --daemon
-
+xautolock -time 1 -locker slock
 #killall swhks
 #swhks
 #pkexec swhkd  # -c $HOME/.config/swhkd/swhkdrc &

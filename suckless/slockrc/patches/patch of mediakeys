@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>tools | suckless.org software that sucks less</title>
+	<link rel="stylesheet" type="text/css" href="patch%20of%20mediakeys_files/style.css">
+</head>
+
+<body><div id="header">
+	<a href="https://suckless.org/"><img src="patch%20of%20mediakeys_files/logo.svg" alt=""></a>&nbsp;
+	<a id="headerLink" href="https://suckless.org/">suckless.org</a>
+	<span class="hidden"> - </span>
+	<span id="headerSubtitle">tools</span>
+</div>
+<hr class="hidden">
+<div id="menu">
+	<a href="https://suckless.org/">home</a>
+	<a href="https://dwm.suckless.org/">dwm</a>
+	<a href="https://st.suckless.org/">st</a>
+	<a href="https://core.suckless.org/">core</a>
+	<a href="https://surf.suckless.org/">surf</a>
+	<a href="https://tools.suckless.org/"><b>tools</b></a>
+	<a href="https://libs.suckless.org/">libs</a>
+	<a href="https://ev.suckless.org/">e.V.</a>
+	<span class="right">
+		<a href="https://dl.suckless.org/">download</a>
+		<a href="https://git.suckless.org/">source</a>
+	</span>
+</div>
+<hr class="hidden">
+<div id="content">
+<div id="nav">
+	<ul>
+	<li><a href="https://tools.suckless.org/">about</a></li>
+	<li><a href="https://tools.suckless.org/9base/">9base/</a></li>
+	<li><a href="https://tools.suckless.org/blind/">blind/</a></li>
+	<li><a href="https://tools.suckless.org/dmenu/">dmenu/</a></li>
+	<li><a href="https://tools.suckless.org/farbfeld/">farbfeld/</a></li>
+	<li><a href="https://tools.suckless.org/ii/">ii/</a></li>
+	<li><a href="https://tools.suckless.org/quark/">quark/</a></li>
+	<li><a href="https://tools.suckless.org/scroll/">scroll/</a></li>
+	<li><a href="https://tools.suckless.org/sent/">sent/</a></li>
+	<li><a href="https://tools.suckless.org/sic/">sic/</a></li>
+	<li><a href="https://tools.suckless.org/slock/"><b>slock/</b></a>
+		<ul>
+		<li><a href="https://tools.suckless.org/slock/patches/"><b>patches/</b></a>
+			<ul>
+			<li><a href="https://tools.suckless.org/slock/patches/auto-timeout/">auto timeout/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/background-image/">background image/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/blur-pixelated-screen/">blur pixelated screen/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/capscolor/">capscolor/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/colormessage/">colormessage/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/control-clear/">control clear/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/dpms/">dpms/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/dwmlogo/">dwmlogo/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/dwmlogoandblurscreen/">dwmlogoandblurscreen/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/failure-command/">failure command/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/foreground-and-background/">foreground and background/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/foreground-image/">foreground image/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/mediakeys/"><b>mediakeys/</b></a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/message/">message/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/pam_auth/">pam auth/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/quickcancel/">quickcancel/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/secret-password/">secret password/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/terminalkeys/">terminalkeys/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/unlock_screen/">unlock screen/</a></li>
+			<li><a href="https://tools.suckless.org/slock/patches/xresources/">xresources/</a></li>
+			</ul>
+		</li>
+		</ul>
+	</li>
+	<li><a href="https://tools.suckless.org/slstatus/">slstatus/</a></li>
+	<li><a href="https://tools.suckless.org/tabbed/">tabbed/</a></li>
+	<li><a href="https://tools.suckless.org/x/">x/</a></li>
+	</ul>
+</div>
+<hr class="hidden">
+<div id="main">
+
+<h1>Mediakeys</h1>
+<h2>Description</h2>
+<p>This patch allows using the following keys to be used while the screen is
+locked:</p>
+<ul>
+<li>XF86AudioPlay</li>
+<li>XF86AudioStop</li>
+<li>XF86AudioPrev</li>
+<li>XF86AudioNext</li>
+<li>XF86AudioRaiseVolume</li>
+<li>XF86AudioLowerVolume</li>
+<li>XF86AudioMute</li>
+<li>XF86AudioMicMute</li>
+<li>XF86MonBrightnessDown</li>
+<li>XF86MonBrightnessUp</li>
+</ul>
+<p>I don't want to unlock the screen just in order to skip the current song or
+raise the volume, mute, etc that's all there is to it.</p>
+<p>NOTE: If you are using dwm for key bindings, in your <code>dwm.c</code> file, go to the
+<code>setup</code> function to the line with <code>wa.event_mask =</code> and add <code>|KeyPressMask</code></p>
+<p><code>`c
+	wa.event_mask = SubstructureRedirectMask|SubstructureNotifyMask
+		|ButtonPressMask|PointerMotionMask|EnterWindowMask
+		|LeaveWindowMask|StructureNotifyMask|PropertyChangeMask|KeyPressMask;
+</code>`</p>
+<h2>Download</h2>
+<ul>
+<li><a href="https://patch-diff.githubusercontent.com/raw/phenax/bslock/pull/1.diff">slock-1.4</a></li>
+<li><a href="https://tools.suckless.org/slock/patches/mediakeys/slock-mediakeys-20170111-2d2a21a.diff">slock-mediakeys-20170111-2d2a21a.diff</a></li>
+</ul>
+<h2>Authors</h2>
+<ul>
+<li>Klemens Nanni <a href="mailto:kl3@posteo.org">kl3@posteo.org</a></li>
+<li>Akshay Nair <a href="mailto:akshay-n0@protonmail.com">akshay-n0@protonmail.com</a> (1.4 version)</li>
+</ul>
+</div>
+
+</div>
+
+
+<remove-web-limits-iqxin id="rwl-iqxin" class="rwl-exempt" style="position: fixed; top: 754px; left: 0px;"><qxinbutton type="qxinbutton" id="rwl-setbtn"> set </qxinbutton> <lalala style="cursor:move; font-size:12px;">限制解除</lalala> <input type="checkbox" name="" id="black_node"><style type="text/css">#rwl-iqxin{position:fixed;transform:translate(-95px,0);width:85px;height:25px;font-size:12px;font-weight: 500;font-family:Verdana, Arial, '宋体';color:#fff;background:#333;z-index:2147483647;margin: 0;opacity:0.05;transition:0.3s;overflow:hidden;user-select:none;text-align:center;white-space:nowrap;line-height:25px;padding:0 16px;border:1px solid #ccc;border-width:1px 1px 1px 0;border-bottom-right-radius:5px;box-sizing: content-box;}#rwl-iqxin input{margin: 0;padding: 0;vertical-align:middle;-webkit-appearance:checkbox;-moz-appearance:checkbox;position: static;clip: auto;opacity: 1;cursor: pointer;}#rwl-iqxin.rwl-active-iqxin{left: 0px;transform:translate(0,0);opacity: 0.9;height: 32px;line-height: 32px}#rwl-iqxin label{margin:0;padding:0;font-weight:500;}#rwl-iqxin #rwl-setbtn{margin: 0 4px 0 0;padding: 0 0 0 4px;border: none;border-radius: 2px;cursor: pointer;background: #fff;color: #000;} </style></remove-web-limits-iqxin></body></html>
