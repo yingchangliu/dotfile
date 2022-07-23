@@ -31,6 +31,6 @@ run fcitx5 -d
 run udiskie
 #run thunar --daemon
 
-killall swhks
-swhks
-pkexec swhkd  # -c $HOME/.config/swhkd/swhkdrc &
+#killall swhks
+#swhks
+#pkexec swhkd  # -c $HOME/.config/swhkd/swhkdrc &
